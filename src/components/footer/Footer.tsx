@@ -28,7 +28,6 @@ const Footer = ({ profileLinks }: FooterProps) => {
       <p className="footer-text u-margin-bottom-sm">
         Designed & Built by <span>Krishnaprasanth DSK</span>
       </p>
-      <p className="footer-text u-margin-bottom-sm">&copy; 2021 - 2022 Rights Reservered.</p>
       <div className="profile">
         <ul className="profile-link-items">
           {profileLinkEl}
