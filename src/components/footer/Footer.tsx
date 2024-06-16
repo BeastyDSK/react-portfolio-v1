@@ -19,8 +19,8 @@ const ProfileLink = ({ title, link, img }: ProfileLinkProp) => {
 };
 
 const Footer = ({ profileLinks }: FooterProps) => {
-  const profileLinkEl = profileLinks.map((profileLink) => {
-    return <ProfileLink {...profileLink}/>
+  const profileLinkEl = profileLinks.map((profileLink, index) => {
+    return <ProfileLink {...profileLink} key={index}/>
   });
 
   return (

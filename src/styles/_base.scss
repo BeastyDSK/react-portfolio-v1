@@ -52,6 +52,11 @@ body {
     z-index: -1;
 }
 
+#root {
+    position: relative;
+    z-index: -1;
+}
+
 ul li {
     list-style: none;
 }

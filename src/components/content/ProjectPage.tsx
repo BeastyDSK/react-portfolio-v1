@@ -50,38 +50,38 @@ const ProjectPage = () => {
     {
       title: 'Coffee Time',
       content:
-        'Coffee Time application is based on web scrapping. When someone searches a news related topic, in the back-end it will fetch the related news and will send back as a response.',
+        'The Coffee Time application is based on web scraping. When someone searches a news-related topic, in the back-end, it will fetch the related news and send back a response.',
       repository: 'Python-News-App',
-      techStack: ['Python', 'Flask', 'REST API', 'HTML5', 'CSS3'],
+      techStack: ['Python', 'Flask', 'Rest API'],
       websiteLink: 'https://dsk-coffee-time.herokuapp.com',
     },
     {
       title: 'WeatherIO',
       content:
-        'Weather IO application is a realtime weather application that uses API to fetch the weather data. This Application also includes one GET API.',
+        'The Weather IO application is a real-time weather application that uses an API to fetch the weather data. This application also includes one GET API.',
       repository: 'node-weather-app',
-      techStack: ['JavaScript', 'NodeJS', 'Rest', 'HTML5', 'CSS3'],
+      techStack: ['NodeJS', 'Rest API', 'PUG'],
       websiteLink: 'https://dsk-weather-io.herokuapp.com',
     },
     {
       title: 'ClassFinder GUI',
       content:
-        'Java Class Finder GUI is a simple utility to search class files inside a jar package. This desktop software is created by using JavaFX 1.8. It supports both normal and RegEx expression',
+        'Java Class Finder GUI is a simple utility to search class files inside a jar package. This desktop software was created using JavaFX 1.8. It supports both normal and RegEx expressions.',
       repository: 'JarClassFinder',
-      techStack: ['Java', 'JavaFX', 'FXML', 'CSS'],
+      techStack: ['Java', 'JavaFX', 'FXML'],
       websiteLink: 'https://github.com/BeastyDSK/JarClassFinder/blob/main/ClassFinderGUI.jar',
     },
     {
       title: 'NumberIO',
       content:
-        'NumberIO is a fun application. Using this application you can check whether a given number is an Armstrong, Prime , Perfect, Happy or Fibonnaci Number.',
+        'NumberIO is a fun application. Using this application, you can check whether a given number is an Armstrong, Prime, Perfect, Happy, or Fibonacci number.',
       repository: 'Python-Flask-NumberIO',
-      techStack: ['Python', 'Flask', 'REST API', 'HTML5', 'CSS3'],
+      techStack: ['Python', 'Flask', 'Rest API'],
       websiteLink: 'https://numberio.herokuapp.com/',
     },
   ];
 
-  const projectCards = projects.map((project) => <ProjectCard {...project} />);
+  const projectCards = projects.map((project, index) => <ProjectCard {...project} key={index} />);
   return (
     <section className="section-projects u-margin-bottom-hg" id="projects">
       <h3 className="heading-tertiary u-margin-bottom-md">Recent projects</h3>

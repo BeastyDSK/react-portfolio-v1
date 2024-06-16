@@ -9,10 +9,10 @@ export type NavigationProps = {
 };
 
 const Navigation = ({links}: NavigationProps) => {
-  const linkEl = links.map((link) => {
+  const linkEl = links.map((link, index) => {
     const {title, href, clasName} = link;
     return (
-      <li className="navigation_item">
+      <li className="navigation_item" key={index}>
         <a className={`navigation_link ${clasName ?? ''}`} href={href} aria-label={`${title} - Link`} key={title}>
           {title}
         </a>

@@ -4,14 +4,14 @@ export type SkillsProps = {
 };
 
 export const SkillList = ({ skills, className }: SkillsProps) => {
-  const SkillEl = skills.map((skill) => <li className={className}>{skill}</li>);
+  const SkillEl = skills.map((skill, index) => <li className={className} key={index}>{skill}</li>);
 
   return <ul className={`${className}s`}>{SkillEl}</ul>;
 };
 
 const SkillPage = () => {
   const skills = [
-    'React',
+    'ReactJS',
     'HTML5',
     'CSS3',
     'SASS',
@@ -30,7 +30,7 @@ const SkillPage = () => {
 
   return (
     <section className="section-skills u-margin-bottom-hg" id="skills">
-      <h3 className="heading-tertiary u-margin-bottom-md">I am Skilled In 🐱‍👤</h3>
+      <h3 className="heading-tertiary u-margin-bottom-md">I am skilled In 🐱‍👤</h3>
       <SkillList skills={skills} className='skill-item' />
     </section>
   );

@@ -4,7 +4,7 @@ const Header = () => {
   const links: LinkProp[] = [
     { title: 'My Skill', href: '#skills' },
     { title: 'About Me', href: '#about-me' },
-    { title: 'Experience', href: '#experience' },
+    // { title: 'Experience', href: '#experience' },
     { title: 'Projects', href: '#projects' },
     { title: 'Contact Me', href: 'mailto:dhawansara14346@gmail.com?subject=Hi%20There', clasName: 'cta-btn' },
   ];
