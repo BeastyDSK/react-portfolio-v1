@@ -2,7 +2,7 @@ import Navigation, { LinkProp } from '../navigation/Navigation';
 
 const Header = () => {
   const links: LinkProp[] = [
-    { title: 'My Skill', href: '#skills' },
+    { title: 'My Skills', href: '#skills' },
     { title: 'About Me', href: '#about-me' },
     // { title: 'Experience', href: '#experience' },
     { title: 'Projects', href: '#projects' },
